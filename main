@@ -1,0 +1,72 @@
+
+food={
+'eggs':120,
+'noodles':200,
+'chips':214,
+'burger':200,
+'pizza':300,
+'bread':100,
+'Ice-Cream':200,
+'spaghetti':150,
+'rice':130,
+'sausage':35,
+'coke':82,
+'beer':58,
+'chicken':150
+}
+
+class Food:
+	def __init__(self):
+		av=food.keys()
+		print(f"Available : {av}")
+		self.meal=input('What would you like to eat or drink today ?\n')
+		
+	def about(self):
+		if self.meal in food:
+			summary.append(food[self.meal])
+		
+			print(f"{self.meal} have {food[self.meal]} calories")
+			print("Average calorie intake for adult is around 2_000cal")	
+		else:
+			print(f"Sorry '{self.meal}' is not available, Please try different food\n")	
+	def cal_counter(self):
+		print(f"You have {2000-s} calories left to consume today\n ")	
+
+summary=[]
+x=2000
+s=0
+while s<=2000:	
+	a=Food()
+	a.about()
+	s=sum(summary)	
+	a.cal_counter()
+	if s>=2000:
+		print(f"WOW that's it {s} for today is enough energy  ")
+	
+	
+
+	
+
+	
+
+		
+		
+			
+	
+
+
+
+
+		
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+
